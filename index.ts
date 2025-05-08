@@ -145,26 +145,4 @@ squareAsync(54)
   .then((x: number) => console.log(x))
   .catch((err: string) => console.error(err));
 
-type person1 = {
-  name: string;
-  age: number;
-};
 
-type person2 = {
-  email: string;
-  phoneNumber: number;
-};
-type Person = person1 & person2;
-
-const student: Person = {
-  name: "Mahmud",
-  age: 32,
-  email: "mahmud@gmail.com",
-  phoneNumber: 167170688,
-};
-type Info = person1 | person2;
-const user: Info = {
-  name: "Mahmud",
-  age: 32,
-  email: "mahmud@gmail.com",
-};
